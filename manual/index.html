@@ -28,8 +28,7 @@
     <!-- Menu button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse"
     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-    aria-expanded="false" aria-label="Toggle navigation">
-    </button>
+    aria-expanded="false" aria-label="Toggle navigation"></button>
 
     <!-- Menu -->
     <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
@@ -62,22 +61,91 @@
 
 
   <!--  -->
-  <div class="flex container-fluid m-2 p-2 h-100">
+  <div class="flex container m-2 p-2 h-100">
 
     <div class="row h-100">
 
-      <div class="col-sm-2 mb-5 text-center">
+      <div class="col-sm-2 mb-5 text-center border-right">
         <h4>Manual</h4>
 
         <a class="badge badge-success w-100" href="#">Introducción</a>
-        <a class="badge badge-primary w-100" href="#">Tabla de Materias</a>
-        <a class="badge badge-primary w-100" href="#">Malla Curricular</a>
-        <a class="badge badge-primary w-100" href="#">Horario</a>
+        <a class="badge badge-primary w-100" href="materias/">Tabla de Materias</a>
+        <a class="badge badge-primary w-100" href="malla/">Malla Curricular</a>
+        <a class="badge badge-primary w-100" href="horario/">Horario</a>
 
       </div>
 
-      <div class="col-sm-10">
-        <h1>Manual de instalación y uso de U Stair</h1>
+      <div class="col-sm-10 text-justify">
+        <h2>Manual de instalación y uso de U Stair</h2>
+
+        <p>
+          <b>U Stair</b> es una aplicacion que permite a la comunidad
+          universitaria poder contar con un entorno agradable, que organice sus
+          planes a lo largo de sus programas académicos, organizando las materias
+          que ha visto y querrá ver en los diferentes semestres que curse.
+          ¡Comencemos a explorar todas las herramientas con las que cuenta!
+        </p>
+
+        <h3>Instalación</h3>
+
+        <p>
+          Para poder instalar la aplicación, haga uso del instalador, segun su
+          sistema operativo.
+        </p>
+
+        <h4>Windows</h4>
+
+        <p>
+          Para windows descargue el instalador <code>.exe</code> y ejecutelo, siga
+          las instrucciones del instalador.
+        </p>
+
+        <h4>Linux</h4>
+
+        <h6>Distros basadas en Debian</h6>
+
+        <p>
+          Para estas distribuciones puede descargar el archivo
+          <code>.deb</code>. Una vez descargado, desde la terminal ubicarse en el
+          directorio donde se encuentra el instalador y correr alguno de los dos
+          siguientes comandos:
+        </p>
+
+        <p><code>$ sudo apt install ./u_Stair.deb</code></p>
+        <p><code>$ dpkg -i u_Stair.deb</code></p>
+
+        <h6>Distros basadas en RPM</h6>
+
+        <p>
+          El archivo <code>.rpm</code> permite instalar la aplicacion en estas
+          distribuciones, por favor descárguelo y ejecute el siguiente comando
+          desde la terminal, en el directorio donde se descargó el instalador
+        </p>
+
+        <p><code>$ sudo rpm –i u_Stair.rpm</code></p>
+
+        <h3>La Aplicación</h3>
+
+        <p>
+          Una vez la aplicación sea instalada, puede ser ejecutada. Cuando abra
+          la aplicación, aparecerá la ventana de vienvenida, como la que se
+          muestra a continuación.
+        </p>
+
+        <div class="w-100 text-center">
+          <img src="../assets/welcome.png" class="img-fluid">
+        </div>
+
+        <p>
+          En esta ventana se podrá crear o abrir archivos propios de la
+          aplicación, los cuales tienen extensión <code>.umsh</code>. También se
+          podrán cambiar la configuración de la aplicacion. Esto se explicará a
+          mayor detalle en las secciones siguientes.
+        </p>
+
+        <div class="w-100">
+          <a href="materias" class="btn btn-primary ml-auto">Siguiente</a>
+        </div>
 
       </div>
 
