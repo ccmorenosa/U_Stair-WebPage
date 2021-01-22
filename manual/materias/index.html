@@ -62,9 +62,9 @@
 
 
   <!--  -->
-  <div class="flex container m-2 p-2 h-100">
+  <div class="container">
 
-    <div class="row h-100">
+    <div class="row w-100">
 
       <div class="col-sm-2 mb-5 text-center border-right">
         <h4>Manual</h4>
@@ -77,14 +77,113 @@
 
       </div>
 
-      <div class="col-sm-10 text-justify">
+      <div class="col-sm-10 pl-5 text-justify">
         <h2>Tabla de Materias</h2>
+
+        <p>
+          En esta pestaña, se podrán ver todas las materias que sean agregadas a
+          la malla, ordenadas en una tabla como la de la figura siguiente.
+        </p>
 
         <div class="w-100 text-center my-3">
           <img src="../../assets/subjects-man.png" class="img-fluid">
         </div>
 
-        <div class="w-100">
+        <p>
+          Así mismo se podrán encontrar materias de forma rápida y sencilla con el
+          filtro de la derecha.
+        </p>
+
+        <h3>Agregar materias</h3>
+
+        <p>
+          Para agregar una nueva materia, haga click en la herramienta
+
+          <button class="btn btn-primary btn-sm rounded-0 p-1">
+            <img  src="../../assets/plus-icon.svg" class="tool">
+          </button>
+
+          , la cual abrirá la siguiente ventana.
+        </p>
+
+        <div class="w-100 text-center my-3">
+          <img src="../../assets/subjects-form-man.png" class="img-fluid">
+        </div>
+
+        <p>
+          En esta llene todos los campos y posteriormente haga click en
+          [<em>Aceptar</em>]. Al hacer, se cerrará dicha ventana y se agregará
+          inmediatamente la materia a la tabla.
+        </p>
+
+        <p class="text-info">
+          <b><span class="fui-question-circle"></span> NOTA:</b> <em>Tenga
+          presente que cada materia debe contar con un código distinto, si se
+          intenta agregar materias con códigos de alguna otra ya existente,
+          simplemente estas no serán añadidas a la tabla.</em>
+        </p>
+
+        <h3>Modificar materias</h3>
+
+        <p>
+          Para modificar una materia, haga click en el icono de modificación,
+
+          <button class="btn btn-warning btn-sm rounded-0 p-1">
+            <img  src="../../assets/edit-icon.svg" class="tool">
+          </button>
+
+          , de la materia que desea modificar, el cual abrirá nuevamente la
+          ventana anterior, pero esta vez con la información de la fila
+          seleccionada.
+
+          Modifique los valores que requiera y luego de click en
+          [<em>Aceptar</em>].
+        </p>
+
+        <h3>Eliminar materias</h3>
+
+        <p>
+          Seleccione primero todas las materias que desee eliminar, posteriormente haga uso de la herramienata
+
+          <button class="btn btn-danger btn-sm rounded-0 p-1" onclick="deleteItems()">
+            <img src="../../assets/delete-icon.svg" class="tool">
+          </button>.
+        </p>
+
+        <p class="text-danger">
+          <b><span class="fui-alert-circle"></span> PRECAUCIÓN:</b> <em>Tenga
+          en cuenta que no hay boton ni comando de retornar. Revise y rectifique
+          las materias que va a eliminar antes de hacerlo.</em>
+        </p>
+
+        <h3>Buscar materias</h3>
+
+        <p>
+          Para buscar alguna materia se necesita simplemente hacer uso del
+          filtro de la derecha del entorno de trabajo, ninguno de los campos es
+          obligatorio. El filtro se aplicará tan pronto se haga click en el
+          [<em>Buscar</em>]
+        </p>
+
+        <p class="text-info">
+          <b><span class="fui-question-circle"></span> NOTA:</b> <em>El filtro
+          tiene e cuenta mayúsculas y tildes, téngalo presente tanto al momento
+          de agregar materias como al de buscarlas.</em>
+        </p>
+
+
+        <h3>Limpiar filtro y recargar</h3>
+
+        <p>
+          Para limpiar los filtros aplicados o simplemente recargar la tabla de
+          materias, haga uso de la herramienta
+
+          <button class="btn btn-primary btn-sm rounded-0 p-1">
+            <img src="../../assets/refresh-icon.svg" class="tool">
+          </button>.
+        </p>
+
+        <div class="w-100 my-4">
           <a href="../entorno" class="btn btn-primary ml-auto">Anterior</a>
           <a href="../malla" class="btn btn-primary ml-auto">Siguiente</a>
         </div>
